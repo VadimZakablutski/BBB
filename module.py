@@ -13,20 +13,16 @@ def passauto()->str:
     print(ls)
     psword = ''.join([random.choice(ls) for x in range(12)])
     return(psword)
-def passcontrol(psword)->str:
-    psword=list(psword)
-    for i in psword:
-        if i.isdigit()== True:
-            digit="True"
-        if i.isalpha()== True:
-            alpha="True"
-        if i.isupper()== True:
-            upper="True"
-        if i.islower()== True:
-            lower="True"
-        if i in [".","_","/","@"]:
+def passcontrol(psword:str)->bool:
+    ls=list(psword)
+    for e in ls:
+        if e.isdigit()== d=True
+        if e.isalpha()== a=True
+        if e.isupper()== u=True
+        if e.islower()== l=True
+        if e in [".","_","/","@"]: s=True
             synbl="True"
-    if digit=="True" and upper=="True" and alpha=="True" and lower=="True" and synbl=="True":
-        t=True 
+    if d==True and u==True and a==True and l==True and s==True and t=True
     else:
         t=False
+    return t
