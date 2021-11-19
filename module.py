@@ -1,6 +1,6 @@
 import random
 def passauto()->str:
-    str0 = ".,:;!_*-+()/#¤%&"
+    str0 = ""
     str1 = "123456789"
     str2 = "qwertyuiopasdfghjklzxcvbnm"
     str3 = str2.upper()
@@ -27,6 +27,6 @@ def passcontrol(psword)->str:
         if i in [".","_","/","@"]:
             synbl="True"
     if digit=="True" and upper=="True" and alpha=="True" and lower=="True" and synbl=="True":
-        ctr=True 
+        t=True 
     else:
-        ctr=False
+        t=False
